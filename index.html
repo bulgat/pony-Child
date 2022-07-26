@@ -6,7 +6,6 @@
 <body>
 
   <canvas id="canvasId" width="1000" height="500" style="bolder: 1px solid blue;">
-  
   </canvas>
 <link rel="stylesheet" type="text/css" href="/style.css">
 <button id="but" name="button">ВПЕРЕД</button>
@@ -15,24 +14,16 @@
   const audio = new Audio("/pony/crazy.mp3");
 
 
-  //kol krikonov 9999922211111111
-
-  
   var canvas = document.getElementById("canvasId");
   var ctx = canvas.getContext("2d");
-  
     //ctx.shadowBlur =30;
   //ctx.shadowColor ="brown";
   let imageNum =0;
 
-  
- var asteroid =["/img0.jpg","/img1.jpg","/img2.jpg","/img3.jpg","/img4.jpg","/img5.jpg","/img6.jpg","/img7.jpg","/img8.jpg","/img9.jpg","/img10.jpg","/img11.jpg"]; 
 
 var imageZ = new Image();
 imageZ.src="pony"+asteroid[imageNum];
 imageZ.onload = function() {
-	
-	
 
 	ctx.drawImage(imageZ,10,10,800,500);
 };
@@ -40,7 +31,6 @@ imageZ.onload = function() {
 
 
 
-function mouseDown(event) 
 {
 	imageNum++;
 	if(imageNum>asteroid.length-1){
@@ -51,7 +41,6 @@ function mouseDown(event)
 	imageZ.src="pony"+asteroid[imageNum];
 	imageZ.onload();
 }
-function mouseUp(event) 
 {
 audio.volume = 1;
 	audio.play(10000);
@@ -75,6 +64,4 @@ document.body.addEventListener("mousedown",mouseDown) ;
 document.body.addEventListener("mouseup",mouseUp) ;
 
   </script>
-  
 </body>
-</html>
