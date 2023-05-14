@@ -13,8 +13,6 @@
 <div id="textPage"></div>
 <canvas id="ground" width="1000" height="100"></canvas>
   <script>
-  const audio = new Audio("./public/pony/crazy.mp3");
-
   const audio = new Audio("/pony/crazy.mp3");
 
 console.log("Test")
@@ -24,13 +22,15 @@ console.log("Test")
   var canvas = document.getElementById("canvasId");
   var ctx = canvas.getContext("2d");
 
+    //ctx.shadowBlur =30;
+  //ctx.shadowColor ="brown";
   let imageNum =0;
 
 
  var asteroid =["/img0.jpg","/img1.jpg","/img2.jpg","/img3.jpg","/img4.jpg","/img5.jpg","/img6.jpg","/img7.jpg","/img8.jpg","/img9.jpg","/img10.jpg","/img11.jpg"];
 
 var imageZ = new Image();
-imageZ.src="./public/pony"+asteroid[imageNum];
+imageZ.src="pony"+asteroid[imageNum];
 imageZ.onload = function() {
 
 
@@ -48,7 +48,7 @@ function mouseDown(event)
 		imageNum=asteroid.length-1;
 	}
 	document.querySelector("#textPage").textContent  =imageNum;
-
+	console.log(event.clientX+"======="+event.clientY);
 	imageZ.src="pony"+asteroid[imageNum];
 	imageZ.onload();
 }
