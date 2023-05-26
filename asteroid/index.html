@@ -73,6 +73,42 @@ let Main = function() {
 }
 setInterval(Main,2000);
 
+function dfs(adj_ar, v, tDestination) {
+	// adj - смежный список
+	// v - посещенный узел (вершина)
+	// t - пункт назначения
+
+	// это общие случаи
+	// либо достигли пункта назначения, либо уже посещали узел
+	if(v === tDestination)
+	{
+		return true;
+	}
+	if(v.visited) 
+	{
+		return false;
+	}
+
+	// помечаем узел как посещенный
+	v.visited = true;
+	// исследуем всех соседей (ближайшие соседние вершины) v
+	console.log( adj_ar,"=fff v  = [",v,"]");
+	for(let neighbor of adj_ar[v]) {
+		// если сосед не посещался
+		if(!neighbor.visited) {
+			// двигаемся по пути и проверяем, не достигли ли мы пункта назначения
+			let reached = dfs(adj_ar, neighbor, tDestination)
+			// возвращаем true, если достигли
+			if(reached) {
+				return true;
+			}
+		}
+	}
+	// если от v до t добраться невозможно
+	return false
+}
+
+
   </script>
 
 </body>
