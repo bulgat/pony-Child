@@ -15,20 +15,26 @@
   <script>
 
 var graph_ar = {'A':['B','D'],'B':['C','N','Z'],'D':['E','F'],'F':['S'],'K':['Z']};
-function fetchFlifht(FromStr){
 
+var stop =[1,2,3,4];
+var ttt = stop.reverse();
+console.log( "=ffff  =",stop);
+
+kol().then((successMessage) => {
+console.log(  "0001= ff  =",successMessage);
+}).catch((Message) => {
+console.log(  "0002= ff  =",Message);
+});
+
+async function kol(){
+//throw(Error('eeeee'))
+return true;
 }
 
-findPath('A','C',fetchFlifht);
-
-async function findPath(From,To,FetchFlight){
-
-return false;
-}
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'A'));
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'B'));
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'C'));
-console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'K'));
+//console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'K'));
 
 function GetPathReachability(Graph_ar,From,Destinashion){
 	if(From===Destinashion){
@@ -39,9 +45,9 @@ function GetPathReachability(Graph_ar,From,Destinashion){
 	}
 	From.visit = true;
 	for(let item of Graph_ar[From]){
-		console.log( item.visit,"=ffffff  =",item);
+		
 		if (!item.visit){
-		console.log( Destinashion,"= ff  =",item);
+		
 			if(Destinashion==item){
 				return true;
 			}
@@ -51,9 +57,50 @@ function GetPathReachability(Graph_ar,From,Destinashion){
 		}
 	}
 	
+	return false //Promise.reject(new Error('no way'));
+}
+console.log( "00000000=fff  =",GetPathStack(graph_ar, 'A', 'A'));
+console.log( "00000000=fff  =",GetPathStack(graph_ar, 'A', 'B'));
+console.log( "00000000=A, C  =",GetPathStack(graph_ar, 'A', 'C'));
+console.log( "00000000=A, S  =",GetPathStack(graph_ar, 'A', 'S'));
+//var graph_ar = {'A':['B','D'],'B':['C','N','Z'],'D':['E','F'],'F':['S'],'K':['Z']};
+function GetPathStack(Graph_ar,From,Destinashion){
+	let stack = [From];
+	const routeMap = new Map();
+	
+	if(From===Destinashion){
+		return true;
+	}
+	console.log( "0003  =", stack.length);
+	while(stack.length>0){
+		
+		const node = stack.shift();
+		console.log( "0004  node =",node );
+		const currentRoute = Graph_ar[node];
+		console.log( "0005 currentRoute =", currentRoute);
+		if (!currentRoute){
+			continue;
+		}
+		for(var item of currentRoute){
+			if (item==Destinashion){
+				return true;
+			}
+		
+			console.log( "0006 item =", item);
+			if (Graph_ar[item]){
+				stack.push(item);
+				console.log( "0007  stack =", stack);
+			}
+			//routeMap.set(item,[...currentRoute,item] );
+		}
+		console.log( "0008  =", stack);
+		if(From===item){
+			return true;
+		}
+		//stack =[];
+	}
 	return false;
 }
-
 
   </script>
 
