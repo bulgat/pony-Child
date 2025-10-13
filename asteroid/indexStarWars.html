@@ -27,14 +27,12 @@ console.log(  "0002= ff  =",Message);
 });
 
 async function kol(){
-//throw(Error('eeeee'))
 return true;
 }
 
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'A'));
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'B'));
 console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'C'));
-//console.log( "=ffffff  =",GetPathReachability(graph_ar, 'A', 'K'));
 
 function GetPathReachability(Graph_ar,From,Destinashion){
 	if(From===Destinashion){
@@ -57,13 +55,13 @@ function GetPathReachability(Graph_ar,From,Destinashion){
 		}
 	}
 	
-	return false //Promise.reject(new Error('no way'));
+	return false;
 }
 console.log( "00000000=fff  =",GetPathStack(graph_ar, 'A', 'A'));
 console.log( "00000000=fff  =",GetPathStack(graph_ar, 'A', 'B'));
 console.log( "00000000=A, C  =",GetPathStack(graph_ar, 'A', 'C'));
 console.log( "00000000=A, S  =",GetPathStack(graph_ar, 'A', 'S'));
-//var graph_ar = {'A':['B','D'],'B':['C','N','Z'],'D':['E','F'],'F':['S'],'K':['Z']};
+
 function GetPathStack(Graph_ar,From,Destinashion){
 	let stack = [From];
 	const routeMap = new Map();
