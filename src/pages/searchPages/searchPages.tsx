@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './searchPages.css';
+import Student from './student';
 
 interface Props { }
 interface IPerson {
@@ -15,16 +16,22 @@ class Person implements IPerson {
 
 const SearchPage = (props: Props) => {
 
+    const [render, setRender] = useState(false);
     const [list, setList] = useState<string[]>([])
 
     function ChangePerson(person: any) {
 
-        console.log("01--", (person instanceof Person), "  person =", person);
+
         if ("role" in person) {
 
         }
         list.push(`${list.length}) in: ${("role" in person)} instanceof: ${(person instanceof Person)} typeof: ${(typeof person)}`);
 
+    }
+
+    const RenderHandler = () => {
+        console.log("01-- rson =" );
+        setRender((current)=>!current)
     }
 
     function logPerson<T extends object = IPerson>(person:T) {
@@ -48,6 +55,14 @@ const SearchPage = (props: Props) => {
                     })}
                 </ul>
             </div>
+            {render &&
+                <div>
+                    <Student name="Kol Krik" age={30} />
+                    <Student name="000 Krik" age={35} />
+                    <Student />
+                </div>
+            }
+            <button onClick={ RenderHandler }>Render</button>
         </>
     )
 }
