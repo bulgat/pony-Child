@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+﻿import { useState } from "react";
+//import { useTranslation } from 'react-i18next';
 interface Props {}
 
 const nominals =[50,100,200,500,1000,2000,5000]
@@ -15,7 +15,6 @@ const MoneyPage = (props: Props) => {
     }
 
     const handleSubmit = () => {
-        console.log(amount, " e  ==", nominals);
         const atmResult = atm(amount, nominals);
         
         if (atmResult!=undefined) {
@@ -45,11 +44,22 @@ const MoneyPage = (props: Props) => {
         return result;
     }
 
+  
+
     return (
         <>
             <div>Money</div>
             <div>
                 <img alt="money" src="/pony/money.jpg" height="100px" />
+            </div>
+            <div>
+                Купюры:
+                <ul>
+                    {nominals.map((value => {
+                        return <li key={value}>{value}</li>
+                    }))}
+                </ul>
+                Наберите сумму и пойдет расчет купюр для выдачи.
             </div>
             <div>
                 <input type="number" name="amount" value={amount} onChange={handleChangeAmount} />

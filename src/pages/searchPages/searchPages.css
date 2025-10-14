@@ -1,0 +1,10 @@
+.container:hover {
+    transform: scale(110%);
+    transition: transform 4s;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-radius:9px;
+}
