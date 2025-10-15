@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useCallback, useEffect, useRef, useState, createContext } from 'react';
 import './searchPages.css';
 import Student from './student';
+import UserList from './userList';
+import ContextCustom from './ContextCustom';
 
 interface Props { }
 interface IPerson {
@@ -30,7 +32,6 @@ const SearchPage = (props: Props) => {
     }
 
     const RenderHandler = () => {
-        console.log("01-- rson =" );
         setRender((current)=>!current)
     }
 
@@ -41,6 +42,22 @@ const SearchPage = (props: Props) => {
     ChangePerson({ id: 1, role: "tt", admin: "yuiu" });
     ChangePerson({});
     ChangePerson(new Person());
+
+    const funcPrint = useCallback(() => {
+
+        console.log("Print=");
+    },[]);
+
+    const userList = [{ name: "kol" }, { name: "stop" }, { name: "dog" }];
+
+    const renderCount = useRef(0);
+
+    useEffect(() => {
+        renderCount.current++;
+    })
+
+    const Context = createContext({name:"kkkkkkk"});
+    const send = { name: "joy" };
 
     return (
         <>
@@ -55,15 +72,22 @@ const SearchPage = (props: Props) => {
                     })}
                 </ul>
             </div>
+            <ContextCustom value={send}>
             {render &&
                 <div>
-                    <Student name="Kol Krik" age={30} />
-                    <Student name="000 Krik" age={35} />
+                    <Student name="Kol Krik" age={30} func={funcPrint} />
+                    <Student name="000 Krik" age={35} func={funcPrint} />
                     <Student />
                 </div>
             }
-            <button onClick={ RenderHandler }>Render</button>
+            </ContextCustom>
+            <button onClick={RenderHandler}>Render</button>
+            <div>
+                <UserList userList={userList} />
+            </div>
+            <div>Render count: {renderCount.current}</div>
         </>
     )
 }
 export default SearchPage;
+
