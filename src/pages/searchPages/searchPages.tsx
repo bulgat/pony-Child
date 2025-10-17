@@ -58,7 +58,11 @@ const SearchPage = (props: Props) => {
 
     const Context = createContext({name:"kkkkkkk"});
     const send = { name: "joy" };
+    /*
+    componentDidMount(){
 
+    }
+    */
     return (
         <>
             <div>Search</div>
@@ -90,4 +94,5 @@ const SearchPage = (props: Props) => {
     )
 }
 export default SearchPage;
+
 

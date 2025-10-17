@@ -12,6 +12,8 @@ const Navbar = (props: Props) => {
             <Link to="company/1">company</Link>
             <br />
             <Link to="money">money</Link>
+            <br />
+            <Link to="table">table</Link>
         </div>
     )
 }
