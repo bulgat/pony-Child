@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\companyPages",
+    "\\src\\pages\\homePages",
+    "\\src\\pages\\moneyPage",
+    "\\src\\pages\\navbar",
+    "\\src\\pages\\searchPages",
+    "\\src\\pages\\tablePage",
+    "\\src\\routes"
+  ],
+  "SelectedNode": "\\src\\pages\\tablePage\\tablePage.tsx",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,6 @@
+@PonyYear_HostAddress = http://localhost:5033
+
+GET {{PonyYear_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
