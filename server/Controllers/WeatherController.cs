@@ -1,3 +1,5 @@
+using Isopoh.Cryptography.Argon2;
+using MD5Hash;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PonyYear.Controllers
@@ -18,8 +20,8 @@ namespace PonyYear.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<Weather> Get()
+        [HttpGet("GetWeather")]
+        public IEnumerable<Weather> GetWeather()
         {
             return Enumerable.Range(1, 5).Select(index => new Weather
             {
@@ -28,6 +30,18 @@ namespace PonyYear.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpGet("GetMd5")]
+        public string GetMd5(string check)
+        {
+            string hash1 = check.GetMD5(EncodingType.UTF8);
+            return hash1;
+        }
+        [HttpGet("GetArgon2")]
+        public string GetArgon2(string check)
+        {
+            var passwordHash = Argon2.Hash(check);
+            return passwordHash;
         }
     }
 }

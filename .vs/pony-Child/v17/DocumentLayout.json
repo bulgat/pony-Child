@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\tablePage\\tablePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\tablePage\\tablePage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\searchPages.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\searchPages\\searchPages.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -102,21 +98,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "searchPages.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\searchPages.tsx",
               "RelativeDocumentMoniker": "src\\pages\\searchPages\\searchPages.tsx",
               "ToolTip": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\searchPages.tsx",
               "RelativeToolTip": "src\\pages\\searchPages\\searchPages.tsx",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-10-13T17:04:47.235Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -140,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "indexStarWars.html",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\asteroid\\indexStarWars.html",
               "RelativeDocumentMoniker": "asteroid\\indexStarWars.html",
@@ -152,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "moneyPage.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\moneyPage\\moneyPage.tsx",
               "RelativeDocumentMoniker": "src\\pages\\moneyPage\\moneyPage.tsx",
@@ -160,12 +154,11 @@
               "RelativeToolTip": "src\\pages\\moneyPage\\moneyPage.tsx",
               "ViewState": "AgIAADcAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-13T17:46:11.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T17:46:11.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "homePages.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\homePages\\homePages.tsx",
               "RelativeDocumentMoniker": "src\\pages\\homePages\\homePages.tsx",
@@ -173,12 +166,11 @@
               "RelativeToolTip": "src\\pages\\homePages\\homePages.tsx",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-13T17:04:04.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T17:04:04.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Navbar.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\navbar\\Navbar.tsx",
               "RelativeDocumentMoniker": "src\\pages\\navbar\\Navbar.tsx",
@@ -186,12 +178,11 @@
               "RelativeToolTip": "src\\pages\\navbar\\Navbar.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-13T17:27:43.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T17:27:43.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "router.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\routes\\router.tsx",
               "RelativeDocumentMoniker": "src\\routes\\router.tsx",
@@ -203,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "App.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\App.tsx",
               "RelativeDocumentMoniker": "src\\App.tsx",
@@ -215,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "index.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\index.tsx",
               "RelativeDocumentMoniker": "src\\index.tsx",
@@ -227,20 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "tablePage.tsx",
-              "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\tablePage\\tablePage.tsx",
-              "RelativeDocumentMoniker": "src\\pages\\tablePage\\tablePage.tsx",
-              "ToolTip": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\tablePage\\tablePage.tsx",
-              "RelativeToolTip": "src\\pages\\tablePage\\tablePage.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-17T14:14:33.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "logo192.png",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\public\\logo192.png",
               "RelativeDocumentMoniker": "public\\logo192.png",
@@ -251,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "companyPages.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\companyPages\\companyPages.tsx",
               "RelativeDocumentMoniker": "src\\pages\\companyPages\\companyPages.tsx",
@@ -259,12 +237,11 @@
               "RelativeToolTip": "src\\pages\\companyPages\\companyPages.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-10-13T16:59:07.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T16:59:07.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\public\\index.html",
               "RelativeDocumentMoniker": "public\\index.html",
@@ -276,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "student.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\student.tsx",
               "RelativeDocumentMoniker": "src\\pages\\searchPages\\student.tsx",
@@ -288,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "userList.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\userList.tsx",
               "RelativeDocumentMoniker": "src\\pages\\searchPages\\userList.tsx",
@@ -300,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "tsconfig.json",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\tsconfig.json",
               "RelativeDocumentMoniker": "tsconfig.json",
@@ -312,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -324,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "searchPages.css",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\searchPages.css",
               "RelativeDocumentMoniker": "src\\pages\\searchPages\\searchPages.css",
@@ -336,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "ContextCustom.tsx",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\searchPages\\ContextCustom.tsx",
               "RelativeDocumentMoniker": "src\\pages\\searchPages\\ContextCustom.tsx",
@@ -348,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\App.css",
               "RelativeDocumentMoniker": "src\\App.css",
@@ -360,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "moneyPage.css",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\moneyPage\\moneyPage.css",
               "RelativeDocumentMoniker": "src\\pages\\moneyPage\\moneyPage.css",
@@ -372,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "favicon.ico",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\public\\favicon.ico",
               "RelativeDocumentMoniker": "public\\favicon.ico",
@@ -383,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\asteroid\\index.html",
               "RelativeDocumentMoniker": "asteroid\\index.html",
@@ -395,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "companyPages.css",
               "DocumentMoniker": "C:\\Users\\Pizza\\Documents\\GitHub\\pony-Child\\src\\pages\\companyPages\\companyPages.css",
               "RelativeDocumentMoniker": "src\\pages\\companyPages\\companyPages.css",

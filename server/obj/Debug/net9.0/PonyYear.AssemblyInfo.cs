@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PonyYear")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9727f81603d0dab20317f6c8c437b9a96351a929")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed7d19c0a43d4816dbd0305476166478143b7194")]
 [assembly: System.Reflection.AssemblyProductAttribute("PonyYear")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PonyYear")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

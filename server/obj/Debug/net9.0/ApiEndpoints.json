@@ -1,8 +1,60 @@
 [
   {
     "ContainingType": "PonyYear.Controllers.WeatherController",
-    "Method": "Get",
-    "RelativePath": "Weather",
+    "Method": "GetArgon2",
+    "RelativePath": "Weather/GetArgon2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "check",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PonyYear.Controllers.WeatherController",
+    "Method": "GetMd5",
+    "RelativePath": "Weather/GetMd5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "check",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PonyYear.Controllers.WeatherController",
+    "Method": "GetWeather",
+    "RelativePath": "Weather/GetWeather",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -17,7 +69,6 @@
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
   }
 ]
