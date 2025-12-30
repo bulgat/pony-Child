@@ -1,6 +1,7 @@
 using Isopoh.Cryptography.Argon2;
 using MD5Hash;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace PonyYear.Controllers
 {
@@ -18,11 +19,13 @@ namespace PonyYear.Controllers
         public WeatherController(ILogger<WeatherController> logger)
         {
             _logger = logger;
+  
         }
 
         [HttpGet("GetWeather")]
         public IEnumerable<Weather> GetWeather()
         {
+            Log.Information("## 001 weather up {@0}", Summaries);
             return Enumerable.Range(1, 5).Select(index => new Weather
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -42,6 +45,11 @@ namespace PonyYear.Controllers
         {
             var passwordHash = Argon2.Hash(check);
             return passwordHash;
+        }
+        [HttpGet("GetLog")]
+        public string Getlog() {
+        
+            return "_logger";
         }
     }
 }
