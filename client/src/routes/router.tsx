@@ -5,6 +5,7 @@ import SearchPage from "../pages/searchPages/searchPages";
 import CompanyPage from "../pages/companyPages/companyPages";
 import MoneyPage from "../pages/moneyPage/moneyPage";
 import TablePage from "../pages/tablePage/tablePage";
+import WebFormPageComponent from "../pages/webFormPage/webFormPage.component";
 
 export const router = createBrowserRouter(
     [
@@ -17,6 +18,7 @@ export const router = createBrowserRouter(
                 { path: "company/:ticker", element: <CompanyPage /> },
                 { path: "money", element: <MoneyPage /> },
                 { path: "table", element: <TablePage /> },
+                { path: "webform", element: <WebFormPageComponent /> },
             ]
         }
     ]
