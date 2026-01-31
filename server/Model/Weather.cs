@@ -1,4 +1,4 @@
-namespace PonyYear
+namespace PonyYear.Model
 {
     public class Weather
     {

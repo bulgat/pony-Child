@@ -1,6 +1,7 @@
 using Isopoh.Cryptography.Argon2;
 using MD5Hash;
 using Microsoft.AspNetCore.Mvc;
+using PonyYear.Model;
 using Serilog;
 
 namespace PonyYear.Controllers
@@ -22,18 +23,6 @@ namespace PonyYear.Controllers
   
         }
 
-        [HttpGet("GetWeather")]
-        public IEnumerable<Weather> GetWeather()
-        {
-            Log.Information("## 001 weather up {@0}", Summaries);
-            return Enumerable.Range(1, 5).Select(index => new Weather
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
         [HttpGet("GetMd5")]
         public string GetMd5(string check)
         {

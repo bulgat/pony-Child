@@ -24,7 +24,7 @@ const HomePage = (props: Props) => {
                  setData(data);
              })
 
-    },);
+    },[]);
 
 
     return (
