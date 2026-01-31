@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
-
+import InternetService from '../../services/internet.service'
+import { IServiceFunction } from "../../services/interface.service";
 interface Props {}
 
 interface IUser {
@@ -11,21 +12,25 @@ interface IUser {
 }
 
 const HomePage = (props: Props) => {
-
+    const _internetService: IServiceFunction = InternetService();
     const [data, setData] = useState([] as IUser[]);
     useEffect(() => {
-        async function fetchData() {
-            const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-            const data = await response.json();
-            setData(data);
-        }
-        fetchData();
+
+        _internetService.fetchJsonData()
+            .then((response: any)=> {
+                 console.log('=========', response)
+                 return response.json();
+             }).then((data: any)  => {
+                 setData(data);
+             })
+
     },);
 
 
     return (
         <>
-        <div>Home</div>
+            <div>Home</div>
+            {_internetService.GetNum() }
             <div> {data.map((item) => ( <div key={item.id}> <h2>- {item.title}</h2> <p>{item.body}</p> </div> ))} </div>
         </>
     )
