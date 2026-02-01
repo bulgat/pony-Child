@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import InternetService from '../../services/internet.service'
 import { IServiceFunction } from "../../services/interface.service";
 import { IUser } from '../../interface/interface'
+import { ignore } from "antd/es/theme/useToken";
 
 interface Props {
 
@@ -27,6 +28,8 @@ const HomePage = (props: Props) => {
             }
         },
     ];
+    // @ts-ignore: Unreachable code error
+    const kol:numeric ='44';
 
     useEffect(() => {
 
@@ -36,6 +39,8 @@ const HomePage = (props: Props) => {
                  return response.json();
              }).then((data: any)  => {
                  setData(data);
+             }).catch((e:any) => {
+                 console.log('error');
              })
 
     },[]);
