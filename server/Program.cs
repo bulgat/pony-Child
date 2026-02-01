@@ -9,7 +9,8 @@ builder.Services.AddDbContext<AppContextPostgree>(opt =>
 opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<FactoryService>();
 builder.Services.AddScoped<FactorioRepository>();
-
+builder.Services.AddScoped<ArsenalService>();
+builder.Services.AddScoped<ArsenalRepository>();
 //Log.Logger = new LoggerConfiguration()
 //  .CreateLogger();
 //Log.Information("##Starting up");

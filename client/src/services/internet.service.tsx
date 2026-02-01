@@ -1,4 +1,5 @@
 import { IServiceFunction } from "./interface.service";
+import { HOST } from '../environment';
 
 function InternetService():IServiceFunction {
     return {
@@ -6,7 +7,7 @@ function InternetService():IServiceFunction {
             return 66;
         },
         fetchJsonData() {
-                return fetch('https://jsonplaceholder.typicode.com/posts');
+            return fetch(HOST + '/arsenal/GetArsenal');
                 //const data = await response.json();
                 //setData(data);
 
