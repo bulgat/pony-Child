@@ -1,4 +1,4 @@
 export interface IServiceFunction {
-    GetNum: Function;
+    GetNum: ()=>number;
     fetchJsonData: Function;
 }

@@ -56,7 +56,7 @@ const HomePage = (props: Props) => {
         <>
             <h2>Home</h2>
             <img src='./arsenal.jpg'/>
-            {_internetService.GetNum() }
+            {_internetService.GetNum()}
             <div> {data.map((item) => (
                 <div key={item.id}>
                     <h2>- {item.name}</h2>

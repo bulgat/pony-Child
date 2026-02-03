@@ -17,7 +17,6 @@ function WeatherService() {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name: 'value' })})
                 .then(a => {
-                    console.log('00  YY', a)
                     return a.text();
                 })
         }

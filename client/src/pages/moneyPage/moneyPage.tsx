@@ -23,24 +23,24 @@ const MoneyPage = (props: Props) => {
     }
 
     function atm(amount: number, nominals: number[]) {
-        console.log("0000 amount  ==", amount, "  nominals =", nominals);
+ 
         if (!amount) {
             return [];
         }
         let rest = amount;
-        console.log("0001 e  ==", amount, "  nominals =", nominals);
+ 
         const result = nominals.reduceRight((acc, nominal) => {
             const amountByNominal = Math.floor(rest / nominal);
-            console.log("0003 rest = ", rest, "  nominal = ", nominal,"  amountByNominal  = ", amountByNominal);
+ 
             if (amountByNominal) {
                 const amountToSub = amountByNominal * nominal;
                 rest -= amountToSub;
-                console.log("0004  ==", rest);
+ 
                 acc.push(`${nominal}x${amountByNominal}`);
             }
             return acc;
         }, [] as string[])
-        console.log("0002  ==", result);
+ 
         return result;
     }
 

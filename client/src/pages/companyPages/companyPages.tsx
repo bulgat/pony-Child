@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { HOST } from '../../environment';
 import WeatherService from '../../services/weather.service'
+import { IPage } from '../IPage'
+import React from "react";
 interface Props {}
 
-const CompanyPage = (props: Props) => {
+const CompanyPage = () => { 
     const _weatherService = WeatherService();
     const [list, setList] = useState([]);
     const [result, setResult] = useState('');

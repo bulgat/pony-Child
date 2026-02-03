@@ -4,7 +4,7 @@ const WebFormPageComponent = () => {
     const [result, setResult] = useState('');
 
     const hadleSubmit = (formData:any) => {
-        console.log('---------', formData.get('login'));
+
         setResult(formData.get('login'));
     }
 
