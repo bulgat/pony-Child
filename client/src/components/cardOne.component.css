@@ -1,0 +1,7 @@
+.card-one {
+    display: flex;
+    flex-flow:row;
+    gap:20px;
+    border-style: outset;
+ 
+}

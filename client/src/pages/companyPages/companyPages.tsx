@@ -3,6 +3,7 @@ import { HOST } from '../../environment';
 import WeatherService from '../../services/weather.service'
 import { IPage } from '../IPage'
 import React from "react";
+import CardOneComponent from "../../components/cardOne.component";
 interface Props {}
 
 const CompanyPage = () => { 
@@ -44,7 +45,9 @@ const CompanyPage = () => {
                 <button onClick={createScore}>Create</button>
                 </div>
             <ul>
-                {list.map((a:any) => { return <li>{a.name}</li> })}
+                {list.map((a: any) => {
+                    return <li><CardOneComponent item={ a } /></li>
+                })}
             </ul>
         </div>
     

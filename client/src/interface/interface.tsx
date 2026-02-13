@@ -4,3 +4,12 @@ export interface IUser {
     name: string;
     numCannon: string;
 }
+export interface IOneCard {
+    item: IItemCard
+}
+export interface IItemCard {
+    name: string;
+    family: string;
+    description: string;
+
+}
