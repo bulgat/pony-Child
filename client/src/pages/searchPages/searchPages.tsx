@@ -3,8 +3,9 @@ import './searchPages.css';
 import Student from './student';
 import UserList from './userList';
 import ContextCustom from './ContextCustom';
+import SearchOneComponent from '../../components/searchOne.component'
 
-interface Props { }
+
 interface IPerson {
     id: number;
     role: string;
@@ -16,7 +17,7 @@ class Person implements IPerson {
     admin = "test";
 }
 
-const SearchPage = (props: Props) => {
+const SearchPage = () => {
 
     const [render, setRender] = useState(false);
     const [list, setList] = useState<string[]>([])
@@ -58,11 +59,7 @@ const SearchPage = (props: Props) => {
 
     const Context = createContext({name:"kkkkkkk"});
     const send = { name: "joy" };
-    /*
-    componentDidMount(){
 
-    }
-    */
     return (
         <>
             <div>Search</div>
@@ -72,7 +69,7 @@ const SearchPage = (props: Props) => {
             <div>
                 <ul>
                     {list.map((a) => {
-                        return <li key={a}>{a}</li>;
+                        return <li><SearchOneComponent key={a} item={ a } /> </li>
                     })}
                 </ul>
             </div>
