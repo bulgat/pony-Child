@@ -13,3 +13,6 @@ export interface IItemCard {
     description: string;
 
 }
+export interface IDictionary {
+    name: string;
+}

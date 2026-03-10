@@ -4,6 +4,7 @@ import Student from './student';
 import UserList from './userList';
 import ContextCustom from './ContextCustom';
 import SearchOneComponent from '../../components/searchOne.component'
+import { IDictionary } from '../../interface/interface';
 
 
 interface IPerson {
@@ -21,6 +22,13 @@ const SearchPage = () => {
 
     const [render, setRender] = useState(false);
     const [list, setList] = useState<string[]>([])
+
+    type ButtonSize = 'small' | 'medium';
+    type ButtonTheme = 'primary' | 'second';
+    type ButtonClass = `btn-${ButtonSize}-${ButtonTheme}`;
+
+    const buttonCustomClass: ButtonClass = 'btn-medium-primary';
+    //const buttonCustomClassError: ButtonClass = 'btn-huge-primary';
 
     function ChangePerson(person: any) {
 
@@ -49,7 +57,9 @@ const SearchPage = () => {
         console.log("Print=");
     },[]);
 
-    const userList = [{ name: "kol" }, { name: "stop" }, { name: "dog" }];
+    const userList: IDictionary[] = [{ name: "kol" } as IDictionary,
+        { name: "stop" } as IDictionary,
+        { name: "dog" } satisfies IDictionary];
 
     const renderCount = useRef(0);
 

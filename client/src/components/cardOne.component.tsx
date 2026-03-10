@@ -4,9 +4,7 @@ import './cardOne.component.css'
 
 const CardOneComponent = (props: IOneCard) => { 
  
-   /*
-
-   */
+  
     return (
         <div className='card-one'>
             <div>{props.item.name}</div>
