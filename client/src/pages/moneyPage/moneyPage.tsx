@@ -2,7 +2,7 @@
 //import { useTranslation } from 'react-i18next';
 interface Props {}
 
-const nominals =[50,100,200,500,1000,2000,5000]
+const nominals:number[] =[50,100,200,500,1000,2000,5000]
 
 const MoneyPage = (props: Props) => {
 

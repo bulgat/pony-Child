@@ -30,11 +30,48 @@ const SearchPage = () => {
     const buttonCustomClass: ButtonClass = 'btn-medium-primary';
     //const buttonCustomClassError: ButtonClass = 'btn-huge-primary';
 
+    
+
+    const roles: Record<string, number | string> = {
+        admin: 1,
+        user: 2,
+        guest:'test'
+    };
+
+    type Role = 'admin' | 'user' | 'guest';
+
+    const roleStrict = {
+        admin: 1,
+        user: 2,
+        guest: 3
+    } as const satisfies Record<Role, number>
+
+    function getRole(name: string) {
+        return roles[name];
+    }
+    //не дает менять Shape - switch начинает ругаться
+    type Shape = 'circle' | 'square';// |'kol';
+
+    function area(shape: Shape): number {
+        switch (shape) {
+            case 'circle': return 1;
+            case 'square': return 2;
+            default: const _: never = shape;
+                return _;
+        }
+    }
+
+    interface Config {
+        readonly port: number;
+    }
+    const config: Config = {port:3000}
+
+    //config.port = 4000;
     function ChangePerson(person: any) {
 
 
         if ("role" in person) {
-
+        console.log('Change person', getRole('admin'))
         }
         list.push(`${list.length}) in: ${("role" in person)} instanceof: ${(person instanceof Person)} typeof: ${(typeof person)}`);
 

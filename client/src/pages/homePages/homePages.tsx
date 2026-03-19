@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import InternetService from '../../services/internet.service'
 import { IServiceFunction } from "../../services/interface.service";
 import { IUser } from '../../interface/interface'
-import { ignore } from "antd/es/theme/useToken";
+//import { ignore } from "antd/es/theme/useToken";
 
 interface Props {
 
