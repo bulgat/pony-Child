@@ -1,4 +1,5 @@
 ﻿import { useState } from "react";
+import { IMoneyUser } from "./IMoneyUser";
 //import { useTranslation } from 'react-i18next';
 interface Props {}
 
@@ -8,6 +9,9 @@ const MoneyPage = (props: Props) => {
 
     const [amount, setAmount] = useState(0);
     const [result, setResult] = useState<string[]>([]);
+    const moneyUser: Partial<IMoneyUser> = {
+        name:'kol'
+    }
 
     const handleChangeAmount = (e: React.ChangeEvent<HTMLInputElement>) => {
 

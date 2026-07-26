@@ -33,7 +33,7 @@ const CompanyPage = () => {
 
                 alert(response)
             }).catch(error => {
-                console.log('09 Y', error);
+
             })
     }
 

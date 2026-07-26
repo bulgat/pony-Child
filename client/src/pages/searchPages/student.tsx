@@ -11,8 +11,6 @@ interface IStudent {
 function Student(props: IStudent) {
 
 	const value = useContext(ContextCustom);
-	console.log( "000 nder = ", value);
-
 
 	useEffect(() => {
 		console.log(value," Render = ", props.func);
