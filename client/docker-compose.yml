@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-pony-app:latest
+    container_name: react_pony_container
+    ports:
+      - "3000:80" # Приложение будет доступно по адресу http://localhost:3000
+    restart: unless-stopped
